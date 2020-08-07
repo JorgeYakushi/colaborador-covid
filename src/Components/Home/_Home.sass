@@ -1,0 +1,232 @@
+.home__container
+    display: flex
+    flex-direction: column
+    padding-bottom: 6rem
+    padding-top: 5rem
+    width: 100%
+    margin: auto
+    .news__container
+        margin-top: 1rem
+        margin-bottom: 1rem
+        background-color: white
+        width: 90%
+        margin-left: 0
+        border-radius: 0 20px 20px 0
+        border: 4px solid #4F97A3
+        border-left: 0
+        h3, h4
+            font-size: 1rem
+            color: #06174e
+            margin: 0
+        h4 
+            font-size: 0.75rem
+        .news__title
+            margin-top: 1rem
+            padding-left: 0.5rem
+        .news__box
+            display: flex
+            flex-direction: row
+            margin-top: 1rem
+            .box__image
+          
+                min-height: 2rem
+                min-width: 5rem
+                max-width: 4rem
+                max-height: 4rem
+                margin-bottom: 1rem
+                border-radius: 50px
+                text-align: center
+                img
+                    max-width: 100%
+                    max-height: 100%
+            .box__text
+                padding-left: 0.5rem
+    .home__logo
+        
+        object
+            height: 6rem
+            filter: invert(100%) sepia(0%) saturate(7460%) hue-rotate(218deg) brightness(109%) contrast(100%)
+    .home__greeting
+        box-sizing: border-box
+      
+        color: white
+        text-align: center
+        font-size: 1.25rem
+        display: flex
+        flex-direction: column
+  
+     
+        align-items: center
+     
+        .home__photo
+            height: 6rem
+            padding-top: 2rem
+           
+        img
+            border-radius: 50px
+            height: 6rem
+           
+        h4
+            padding-top: 2rem
+            font-size: 1.25rem
+            text-align: left
+            margin: 0
+            text-align: center
+            font-weight: 400
+    .home__direction
+        padding-top: 0rem
+        color: white
+        width: 90%
+        margin: auto
+        text-align: center
+        font-size: 1.10rem
+    .home__nav
+        margin: auto
+        padding-top: 1rem
+        ul
+            list-style: none
+            padding: 0
+            a   
+                text-decoration: none
+            li
+                background-color: #eee
+                color: white
+                margin-top: 1rem
+                padding-left: 0.5rem
+                padding-right: 0.5rem
+                border-radius: 10px
+                display: flex
+                flex-direction: row
+                align-items: center
+                cursor: pointer
+                object
+                    height: 2rem
+                    filter: invert(9%) sepia(62%) saturate(3540%) hue-rotate(222deg) brightness(77%) contrast(103%)
+                    
+                h3
+                    font-size: 0.95rem
+                    padding-left: 1rem
+                    
+                    color: #06174e
+
+    .home__stats--1
+        width: 90%
+        margin: auto
+        margin-bottom: 2rem
+        text-align: center
+        font-size: 1rem
+        color: white
+        padding-top: 2rem
+        font-weight: 300
+
+        h3
+            margin: 0
+            padding-top: 0.5rem
+            padding-bottom: 0.5rem
+            font-size: 1.25rem
+    .home__stats--2 
+        width: 90%
+        margin: auto
+        text-align: left
+        font-size: 1rem
+        color: white
+        font-weight: 300
+        list-style: none
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+            
+        .list--front
+            position: absolute
+            transform: translateX(0%)
+            transition: all 0.5s
+            background-color: #214f88
+            z-index: 2
+            padding-top: 0.5rem
+            height: 100%
+            width: 100%
+            border: 2px solid #214f88
+        .list--item
+            background-color: #214f88
+            color: white
+            width: 40%
+            height: 5.5rem
+            position: relative
+            border-radius: 10px
+            overflow: hidden
+            margin-bottom: 3rem
+            > *
+                pointer-events: none 
+            h3
+                margin: 0
+                border-radius: 10px
+                overflow: hidden
+                font-size: 0.9rem
+                text-align: center
+      
+            // &:hover > .list--front
+            //     transform: translateX(125%)
+            //     transition: all 0.5s
+            
+            .list--back
+                
+                
+                padding-top: 0.5rem
+                padding-left: 0.5rem
+                z-index: 1
+                color: #214f88
+                background-color: white
+                width: 100%
+                height: 100%
+                border-radius: 12px
+                li
+                    font-size: 0.75rem
+            .list--icon
+                display: flex
+                
+                align-items: center
+                justify-content: center
+                
+                object
+                    margin-top: 0.25rem
+                    height: 3rem
+                    //filter: invert(9%) sepia(62%) saturate(3540%) hue-rotate(222deg) brightness(77%) contrast(103%)
+                    filter: invert(100%) sepia(27%) saturate(184%) hue-rotate(73deg) brightness(105%) contrast(103%)
+        .list--active 
+            background-color: white
+            .list--front
+                transform: translateX(125%)
+                transition: all 0.5s
+    @media (min-width: 768px)
+        .home__greeting
+            .home__photo
+                height: 12.5rem
+                .user__photo
+                    height: 12.5rem
+            h4
+                font-size: 2.5rem
+                width: 80%
+                margin-top: 2rem
+        .home__stats--1
+            h3
+                font-size: 1.75rem
+        .list--item
+            min-height: 10rem
+            
+            .list--icon
+                margin-top: 1rem
+                .icon
+                    min-height: 5rem
+            .list--front
+                h3
+                    font-size: 1.75rem
+            .list--back
+                .list--text
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    height: 100%
+                    li
+                        font-size: 1.75rem
+                        padding-bottom: 0.5rem

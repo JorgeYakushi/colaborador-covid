@@ -1,0 +1,251 @@
+.report__container
+    margin-top: 4rem
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .report__header
+        color: white
+        font-size: 1rem
+        margin-bottom: 1rem
+    .search__header
+        border: 1px solid white
+        border-radius: 5px
+        text-align: center
+        padding-top: 0.5rem
+        padding-bottom: 0.5rem
+        font-size: 1.15rem
+        color: white
+        padding: 0.5rem
+        width: 90%
+        margin-bottom: 1.5rem
+    .report__generate
+        width: 90%
+        margin: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 2rem
+        margin-bottom: 8rem
+        button
+            appearance: none
+            display: flex
+            flex-direction: row
+            height: 2rem
+            width: 10rem
+            border-radius: 5px
+            border: none
+            background-color: #214f88
+            align-items: center
+            color: white
+            margin: auto
+            justify-content: center
+            
+            i
+                padding-right: 0.5rem
+                font-size: 1.15rem
+            &:hover, &:active
+                background-color: #eee
+                color: #214f88
+            .button--disabled
+                background-color: rgb(125,125,125)
+                &:hover, &:active
+                    background-color: rgb(125,125,125)
+                    color: white
+.search__manager
+   
+    display: flex
+    flex-direction: column
+    width: 90%
+    
+    > *
+        margin-bottom: 1rem
+    .selector__container
+        display: flex
+        flex-direction: row
+     
+        min-width: 80vw
+        .select__container
+            position: relative
+                        
+            .fa-angle-down
+                position: absolute
+                right: 0.5rem
+                top: 50%
+                transform: translateY(-50%)
+                color: #214f88
+                font-size: 1.25rem
+                pointer-events: none
+        h3
+            margin: 0
+            color: white
+            font-size: 1.25rem
+        
+    select 
+        appearance: none
+        background-color: white
+        min-width: 14rem
+        border-radius: 10px
+        color: #214f88
+        font-size: 0.9rem
+        padding-left: 0.5rem
+        max-height: 1.5rem
+        line-height: 1.5
+    .add--date
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+
+        .add--calendar
+            position: relative
+            *
+                border-radius: 5px
+                border: none
+                color: #214f88
+            
+                input
+                    padding: 0.25rem
+                    text-align: center
+                    width: 11rem
+            .fa-angle-down
+                position: absolute
+                right: 0.5rem
+                top: 50%
+                transform: translateY(-50%)
+                pointer-events: none
+                     
+            .fa-calendar
+                position: absolute
+                left: 0.5rem
+                top: 50%
+                transform: translateY(-50%)
+                pointer-events: none
+                color: #214f88
+                z-index: 1
+    h3
+        min-width: 35%
+        max-width: 35%
+        margin: 0
+table th 
+    font-size: 0.75rem
+    text-align: left
+
+table 
+    border-collapse: collapse
+    max-width: 90%
+    min-width: 90%
+    margin: auto
+    color: #444444
+    .table__header
+        background-color: #214f88
+        color: white
+    th
+        font-weight: normal
+        padding-top: 0.5rem
+        padding-bottom: 0.5rem
+        &:nth-child(1)
+            padding-left: 0.5rem
+        &:nth-last-child(1)
+            padding-right: 0.5rem
+    tr
+        &:nth-child(even)
+            background-color: #dbdbdb
+        &:nth-child(2n+3)
+            background-color: #EBEBEB
+
+.chart__container
+    display: flex
+    flex-direction: column
+    margin-bottom: 6rem
+    .add--button
+        appearance: none
+        display: flex
+        flex-direction: row
+        height: 2rem
+        width: 10rem
+        border-radius: 5px
+        border: none
+        background-color: #214f88
+        align-items: center
+        color: white
+        margin: auto
+        justify-content: center
+        margin-bottom: 1rem
+        i
+            padding-right: 0.5rem
+        &:hover, &:active
+            background-color: #eee
+            color: #214f88
+.chart
+    background-color: rgba(255,255,255,0.85)
+    border-radius: 20px
+    padding: 0.5rem
+    margin-bottom: 1rem
+
+@media (min-width: 768px)
+    .report__container
+        width: 90%
+        margin: auto
+        padding-top: 8rem
+        .patient__header
+            font-size: 2rem
+        .search__header
+            font-size: 1.5rem
+            padding-top: 1.5rem
+            padding-bottom: 1.5rem
+            margin-bottom: 2rem
+        .search__container
+            > *
+                margin-top: 2rem
+        .search__manager
+            .selector__container
+                .select__container
+                    margin-bottom: 2rem
+                    select
+                        min-width: 28rem
+                .add--calendar
+                    margin-bottom: 2rem
+                    .fa-calendar
+                        left: 2rem
+                        z-index: 10
+                    .react-datepicker-wrapper
+                        input
+                            min-width: 28rem
+                    .react-datepicker-popper
+                        z-index: 110
+        .chart__container
+            margin-bottom: 12rem
+            .add--button
+                margin-bottom: 3rem
+            .chart
+                padding: 2rem
+
+                .chartjs-render-monitor
+                    width: 500px!important
+                    height: 250px!important
+@media (min-width: 992px)
+    .report__container
+        .search__manager
+            flex-wrap: wrap
+            min-height: 21vh
+            max-height: 21vh    
+            .selector__container
+                min-width: 0
+                width: 50%
+                
+                .select__container
+                    select
+                        min-width: 22vw
+                .add--calendar
+     
+                    .fa-calendar
+
+                    .react-datepicker-wrapper
+                        input
+                            min-width: 24vw        
+        .chart__container
+            margin-bottom: 0
+            .chart
+                .chartjs-render-monitor
+                    width: 700px!important
+                    height: 300px!important

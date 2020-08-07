@@ -1,0 +1,128 @@
+.header__container
+    position: fixed
+    top: 0
+    min-height: 4rem
+    min-width: 100vw
+    z-index: 10
+    background-color: white
+    box-shadow: 0px 4px 3px rgba(50, 50, 50, 0.75)
+    .header__main
+        display: flex
+        flex-direction: row
+        font-size: 1.15rem
+    .header__logo 
+        min-height: 4rem
+        position: relative
+        width: 50%
+        a
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            color: #06174e
+            cursor: pointer
+            padding-left: 1rem
+    .header__button
+        min-height: 4rem
+        position: relative
+        width: 50%
+        i   
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            color: #06174e
+            cursor: pointer
+            padding-right: 2rem
+            
+    .header__list
+        list-style: none
+        position: fixed
+        margin: 0
+        background-color: rgba(255,255,255,1 )
+        max-width: 50vw
+        min-width: 50vw
+        min-height: 100vh
+        top: 0
+        right: 0
+        transform: translateX(120%)
+        transition: transform 0.5s
+        box-shadow: -5px 0px 5px 0.5px #333
+        z-index: 11
+
+        li
+            padding-top: 2rem
+            &:first-of-type
+                padding-top: 5rem
+                a
+                    text-decoration: underline
+        a
+            text-decoration: none
+            color: #06174e
+            font-weight: bold
+            font-size: 1.25rem
+        .logout
+            font-size: 1.15rem
+            &:hover, :active
+                text-decoration: underline
+            
+        .menu--visible__main
+            display: flex
+            flex-direction: row
+            color: #06174e
+            padding-top: 1rem
+            justify-content: space-between
+            font-size: 1.25rem
+            i 
+                padding-right: 2rem
+                cursor: pointer
+    .menu--visible
+        transform: translateX(0%)
+        transition: transform 0.5s
+
+@media (min-width: 768px)
+    .header__container
+        min-height: 6rem
+        .header__main
+            min-height: 6rem
+            .header__logo
+                a
+                    font-size: 1.75rem
+            .header__button
+                i
+                    font-size: 1.75rem
+        .header__list
+            
+            .menu--visible__main
+                padding-top: 3rem
+                .menu--visible__logo
+                    font-size: 1.75rem
+                .menu--visible__exit
+                    font-size: 1.75rem
+            li
+                a
+                    font-size: 1.5rem
+
+@media (min-width: 992px)
+    .header__container
+        .header__main
+            display: none
+        .header__list   
+            position: static
+            transform: translateX(0%)
+            min-width: 100vw
+            min-height: 6rem
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: end
+            .menu--visible__main
+                padding: 0
+                margin-right: auto
+                .menu--visible__exit
+                    display: none
+            li
+                padding: 0
+                margin-right: 3rem
+                &:first-of-type
+                    padding-top: 0rem
+

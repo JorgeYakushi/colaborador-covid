@@ -1,0 +1,1795 @@
+.header__container {
+  position: fixed;
+  top: 0;
+  min-height: 4rem;
+  min-width: 100vw;
+  z-index: 10;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 3px rgba(50, 50, 50, 0.75);
+          box-shadow: 0px 4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.header__container .header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.15rem;
+}
+
+.header__container .header__logo {
+  min-height: 4rem;
+  position: relative;
+  width: 50%;
+}
+
+.header__container .header__logo a {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #06174e;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.header__container .header__button {
+  min-height: 4rem;
+  position: relative;
+  width: 50%;
+}
+
+.header__container .header__button i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #06174e;
+  cursor: pointer;
+  padding-right: 2rem;
+}
+
+.header__container .header__list {
+  list-style: none;
+  position: fixed;
+  margin: 0;
+  background-color: white;
+  max-width: 50vw;
+  min-width: 50vw;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: -5px 0px 5px 0.5px #333;
+          box-shadow: -5px 0px 5px 0.5px #333;
+  z-index: 11;
+}
+
+.header__container .header__list li {
+  padding-top: 2rem;
+}
+
+.header__container .header__list li:first-of-type {
+  padding-top: 5rem;
+}
+
+.header__container .header__list li:first-of-type a {
+  text-decoration: underline;
+}
+
+.header__container .header__list a {
+  text-decoration: none;
+  color: #06174e;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.header__container .header__list .logout {
+  font-size: 1.15rem;
+}
+
+.header__container .header__list .logout:hover, .header__container .header__list .logout :active {
+  text-decoration: underline;
+}
+
+.header__container .header__list .menu--visible__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #06174e;
+  padding-top: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.header__container .header__list .menu--visible__main i {
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.header__container .menu--visible {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    min-height: 6rem;
+  }
+  .header__container .header__main {
+    min-height: 6rem;
+  }
+  .header__container .header__main .header__logo a {
+    font-size: 1.75rem;
+  }
+  .header__container .header__main .header__button i {
+    font-size: 1.75rem;
+  }
+  .header__container .header__list .menu--visible__main {
+    padding-top: 3rem;
+  }
+  .header__container .header__list .menu--visible__main .menu--visible__logo {
+    font-size: 1.75rem;
+  }
+  .header__container .header__list .menu--visible__main .menu--visible__exit {
+    font-size: 1.75rem;
+  }
+  .header__container .header__list li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__container .header__main {
+    display: none;
+  }
+  .header__container .header__list {
+    position: static;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    min-width: 100vw;
+    min-height: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .header__container .header__list .menu--visible__main {
+    padding: 0;
+    margin-right: auto;
+  }
+  .header__container .header__list .menu--visible__main .menu--visible__exit {
+    display: none;
+  }
+  .header__container .header__list li {
+    padding: 0;
+    margin-right: 3rem;
+  }
+  .header__container .header__list li:first-of-type {
+    padding-top: 0rem;
+  }
+}
+
+.footer__container {
+  position: fixed;
+  bottom: 0;
+  min-height: 5rem;
+  min-width: 100vw;
+  z-index: 5;
+  background-color: white;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+          box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.footer__container .nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 4.5rem;
+  list-style: none;
+}
+
+.footer__container .nav__container li {
+  max-width: 25%;
+  min-width: 25%;
+  min-height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__container .nav__container a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__container .nav__container object {
+  height: 2rem;
+  -webkit-filter: invert(40%) sepia(24%) saturate(0%) hue-rotate(205deg) brightness(95%) contrast(88%);
+          filter: invert(40%) sepia(24%) saturate(0%) hue-rotate(205deg) brightness(95%) contrast(88%);
+}
+
+.footer__container .nav__container .text__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__container .nav__container h3 {
+  padding-top: 0.25rem;
+  margin: 0;
+  font-size: 0.75rem;
+  text-align: center;
+  width: 80%;
+  min-height: 2rem;
+}
+
+#navlink-1 {
+  background-color: #214f88;
+}
+
+#navlink-1 object {
+  -webkit-filter: invert(100%) sepia(70%) saturate(0%) hue-rotate(322deg) brightness(112%) contrast(101%);
+          filter: invert(100%) sepia(70%) saturate(0%) hue-rotate(322deg) brightness(112%) contrast(101%);
+}
+
+#navlink-1 h3 {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    min-height: 8rem;
+  }
+  .footer__container .nav__container {
+    min-height: 8rem;
+  }
+  .footer__container .nav__container .navlink {
+    min-height: 8rem;
+  }
+  .footer__container .nav__container .navlink a object {
+    height: 3rem;
+  }
+  .footer__container .nav__container .navlink .text__container h3 {
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__container {
+    display: none;
+  }
+}
+
+.home__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 6rem;
+  padding-top: 5rem;
+  width: 100%;
+  margin: auto;
+}
+
+.home__container .news__container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  width: 90%;
+  margin-left: 0;
+  border-radius: 0 20px 20px 0;
+  border: 4px solid #4F97A3;
+  border-left: 0;
+}
+
+.home__container .news__container h3, .home__container .news__container h4 {
+  font-size: 1rem;
+  color: #06174e;
+  margin: 0;
+}
+
+.home__container .news__container h4 {
+  font-size: 0.75rem;
+}
+
+.home__container .news__container .news__title {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.home__container .news__container .news__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1rem;
+}
+
+.home__container .news__container .news__box .box__image {
+  min-height: 2rem;
+  min-width: 5rem;
+  max-width: 4rem;
+  max-height: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.home__container .news__container .news__box .box__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home__container .news__container .news__box .box__text {
+  padding-left: 0.5rem;
+}
+
+.home__container .home__logo object {
+  height: 6rem;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7460%) hue-rotate(218deg) brightness(109%) contrast(100%);
+          filter: invert(100%) sepia(0%) saturate(7460%) hue-rotate(218deg) brightness(109%) contrast(100%);
+}
+
+.home__container .home__greeting {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__container .home__greeting .home__photo {
+  height: 6rem;
+  padding-top: 2rem;
+}
+
+.home__container .home__greeting img {
+  border-radius: 50px;
+  height: 6rem;
+}
+
+.home__container .home__greeting h4 {
+  padding-top: 2rem;
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+.home__container .home__direction {
+  padding-top: 0rem;
+  color: white;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.10rem;
+}
+
+.home__container .home__nav {
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.home__container .home__nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home__container .home__nav ul a {
+  text-decoration: none;
+}
+
+.home__container .home__nav ul li {
+  background-color: #eee;
+  color: white;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.home__container .home__nav ul li object {
+  height: 2rem;
+  -webkit-filter: invert(9%) sepia(62%) saturate(3540%) hue-rotate(222deg) brightness(77%) contrast(103%);
+          filter: invert(9%) sepia(62%) saturate(3540%) hue-rotate(222deg) brightness(77%) contrast(103%);
+}
+
+.home__container .home__nav ul li h3 {
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  color: #06174e;
+}
+
+.home__container .home__stats--1 {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  padding-top: 2rem;
+  font-weight: 300;
+}
+
+.home__container .home__stats--1 h3 {
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.home__container .home__stats--2 {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.home__container .home__stats--2 .list--front {
+  position: absolute;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #214f88;
+  z-index: 2;
+  padding-top: 0.5rem;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #214f88;
+}
+
+.home__container .home__stats--2 .list--item {
+  background-color: #214f88;
+  color: white;
+  width: 40%;
+  height: 5.5rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.home__container .home__stats--2 .list--item > * {
+  pointer-events: none;
+}
+
+.home__container .home__stats--2 .list--item h3 {
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.home__container .home__stats--2 .list--item .list--back {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  z-index: 1;
+  color: #214f88;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.home__container .home__stats--2 .list--item .list--back li {
+  font-size: 0.75rem;
+}
+
+.home__container .home__stats--2 .list--item .list--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__container .home__stats--2 .list--item .list--icon object {
+  margin-top: 0.25rem;
+  height: 3rem;
+  -webkit-filter: invert(100%) sepia(27%) saturate(184%) hue-rotate(73deg) brightness(105%) contrast(103%);
+          filter: invert(100%) sepia(27%) saturate(184%) hue-rotate(73deg) brightness(105%) contrast(103%);
+}
+
+.home__container .home__stats--2 .list--active {
+  background-color: white;
+}
+
+.home__container .home__stats--2 .list--active .list--front {
+  -webkit-transform: translateX(125%);
+          transform: translateX(125%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (min-width: 768px) {
+  .home__container .home__greeting .home__photo {
+    height: 12.5rem;
+  }
+  .home__container .home__greeting .home__photo .user__photo {
+    height: 12.5rem;
+  }
+  .home__container .home__greeting h4 {
+    font-size: 2.5rem;
+    width: 80%;
+    margin-top: 2rem;
+  }
+  .home__container .home__stats--1 h3 {
+    font-size: 1.75rem;
+  }
+  .home__container .list--item {
+    min-height: 10rem;
+  }
+  .home__container .list--item .list--icon {
+    margin-top: 1rem;
+  }
+  .home__container .list--item .list--icon .icon {
+    min-height: 5rem;
+  }
+  .home__container .list--item .list--front h3 {
+    font-size: 1.75rem;
+  }
+  .home__container .list--item .list--back .list--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  .home__container .list--item .list--back .list--text li {
+    font-size: 1.75rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.patient__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 4rem;
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.patient__container h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.patient__container .patient__header {
+  color: white;
+  text-align: center;
+}
+
+.patient__container .search__header {
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.patient__container .search__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.patient__container .search__container > * {
+  margin-top: 1.5rem;
+}
+
+.patient__container .search__container .add--button {
+  min-width: 7rem !important;
+}
+
+.patient__container .search__container .search__label {
+  min-width: 35%;
+  max-width: 35%;
+  max-height: 2rem;
+}
+
+.patient__container .search__container .search__finder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1rem;
+}
+
+.patient__container .search__container .search__finder input {
+  height: 1.5rem;
+  width: 12rem;
+  max-width: 30%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.patient__container .search__container .search__finder button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #214f88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.patient__container .search__container .search__finder button i {
+  padding-right: 0.5rem;
+}
+
+.patient__container .search__container .search__finder button:hover, .patient__container .search__container .search__finder button:active {
+  background-color: #eee;
+  color: #214f88;
+}
+
+.patient__container .search__container .search__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.patient__container .search__container .search__data:last-child .search__radio, .patient__container .search__container .search__data:last-child button {
+  margin-left: 1rem;
+}
+
+.patient__container .search__container .search__data .search__textbox {
+  background-color: rgba(225, 225, 225, 0.66);
+  min-width: 15rem;
+  border-radius: 10px;
+  color: #214f88;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  min-height: 1.5rem;
+  line-height: 1.5;
+}
+
+.patient__container .search__container .search__data .search__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.patient__container .search__container .search__data button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #214f88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.patient__container .search__container .search__data button i {
+  padding-right: 0.5rem;
+}
+
+.patient__container .search__container .search__data button:hover, .patient__container .search__container .search__data button:active {
+  background-color: #eee;
+  color: #214f88;
+}
+
+.patient__container .search__container .search__data .button--disabled {
+  background-color: #7d7d7d;
+}
+
+.patient__container .search__container .search__data .button--disabled:hover, .patient__container .search__container .search__data .button--disabled:active {
+  background-color: #7d7d7d;
+  color: white;
+}
+
+.patient__container .patient__addcontacts {
+  margin-top: 2rem;
+}
+
+.patient__container .patient__addcontacts .add__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .add--label {
+  min-width: 35%;
+  max-width: 35%;
+  max-height: 2rem;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .add--select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+  min-width: 14rem;
+  max-width: 15rem;
+  border-radius: 10px;
+  color: #214f88;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  max-height: 1.5rem;
+  line-height: 1.5;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .select__container {
+  position: relative;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .select__container .dropdown {
+  min-width: 15rem;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .select__container .dropdown i {
+  display: none;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .select__container .dropdown, .patient__container .patient__addcontacts .add__container .add--search .select__container input {
+  padding-left: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .select__container .dropdown .item, .patient__container .patient__addcontacts .add__container .add--search .select__container input .item {
+  padding-left: 0.5rem !important;
+  font-size: 0.75rem;
+}
+
+.patient__container .patient__addcontacts .add__container .add--search .select__container .fa-angle-down {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #214f88;
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+.patient__container .patient__addcontacts .add__container .add--button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #214f88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.patient__container .patient__addcontacts .add__container .add--button i {
+  padding-right: 0.5rem;
+}
+
+.patient__container .patient__addcontacts .add__container .add--button:hover, .patient__container .patient__addcontacts .add__container .add--button:active {
+  background-color: #eee;
+  color: #214f88;
+}
+
+.patient__container .patient__addcontacts .add__container .button--disabled {
+  background-color: #7d7d7d;
+}
+
+.patient__container .patient__addcontacts .add__container .button--disabled:hover, .patient__container .patient__addcontacts .add__container .button--disabled:active {
+  background-color: #7d7d7d;
+  color: white;
+}
+
+.patient__container .patient__browsecontacts {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.patient__container .patient__browsecontacts .contacts__table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 4rem;
+}
+
+.patient__container .patient__browsecontacts .contacts__table tbody {
+  width: 100%;
+  display: block;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .table__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 2.5px solid #214f88;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th:first-child {
+  min-width: 20%;
+  max-width: 20%;
+  display: block;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th:nth-child(2) {
+  min-width: 80%;
+  display: block;
+  overflow: auto;
+  max-width: 80%;
+  margin-right: 0.5rem;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th:nth-child(3) {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th p, .patient__container .patient__browsecontacts .contacts__table .contact__row th h6 {
+  margin: 0;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th p {
+  font-size: 1rem;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th h6 {
+  font-size: 0.75rem;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th img {
+  border-radius: 25px;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row th i {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.patient__container .patient__browsecontacts .contacts__table .contact__row .remove__contact {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .patient__container {
+    width: 80%;
+    padding-top: 8rem;
+  }
+  .patient__container .patient__header {
+    font-size: 2rem;
+  }
+  .patient__container .search__header {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .patient__container .search__container > * {
+    margin-top: 2rem;
+  }
+  .patient__container .search__container .search__finder input {
+    min-width: 18rem;
+  }
+  .patient__container .search__container .search__finder .finder--button {
+    width: 8rem;
+  }
+  .patient__container .search__container .search__finder .finder--button i {
+    padding-right: 1.5rem;
+  }
+  .patient__container .search__container .search__data .search__textbox {
+    min-width: 28rem;
+  }
+  .patient__container .search__container .search__data .search__radio > * {
+    padding-left: 1rem;
+  }
+  .patient__container .patient__addcontacts .add__container .add--search .select__container .dropdown {
+    min-width: 28rem;
+  }
+  .patient__container .patient__addcontacts .add__container .add--search i {
+    display: none;
+  }
+  .patient__container .patient__addcontacts .add__container .add--search i .dropdown, .patient__container .patient__addcontacts .add__container .add--search i input {
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .patient__container .patient__addcontacts .add__container .add--search i .dropdown .item, .patient__container .patient__addcontacts .add__container .add--search i input .item {
+    padding-left: 0.5rem !important;
+    font-size: 0.75rem;
+  }
+  .patient__container .patient__browsecontacts .browse__container .contacts__table tbody .contact__row th img {
+    width: 4rem;
+  }
+  .patient__container .patient__browsecontacts .browse__container .contacts__table tbody .contact__row th .fa {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .patient__container {
+    max-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25vw 25vw 25vw 25vw;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+    -ms-grid-rows: 10vh  10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+        grid-template-rows: 10vh  10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+  }
+  .patient__container .patient__header {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    max-height: 20vw;
+  }
+  .patient__container .patient__search {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 9;
+    width: 80%;
+    padding-left: 10%;
+  }
+  .patient__container .patient__search .search__container .search__finder input {
+    min-width: 12vw;
+  }
+  .patient__container .patient__search .search__container .search__data .search__textbox {
+    min-width: 22vw;
+  }
+  .patient__container .patient__addcontacts {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 4;
+    width: 80%;
+    padding-left: 10%;
+    margin: 0;
+  }
+  .patient__container .patient__addcontacts .add__container .add--search .select__container .dropdown {
+    min-width: 22vw;
+  }
+  .patient__container .patient__browsecontacts {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 9;
+    width: 80%;
+    padding-left: 10%;
+    margin: 0;
+  }
+}
+
+.activity__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 4rem;
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.activity__container h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.activity__container .patient__header {
+  color: white;
+  text-align: center;
+}
+
+.activity__container .search__header {
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.activity__container .search__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.activity__container .search__container > * {
+  margin-top: 1.5rem;
+}
+
+.activity__container .search__container .search__label {
+  min-width: 35%;
+  max-width: 35%;
+  max-height: 2rem;
+}
+
+.activity__container .search__container .search__finder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1rem;
+}
+
+.activity__container .search__container .search__finder input {
+  height: 1.5rem;
+  max-width: 30%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.activity__container .search__container .search__finder button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #214f88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.activity__container .search__container .search__finder button i {
+  padding-right: 0.5rem;
+}
+
+.activity__container .search__container .search__finder button:hover, .activity__container .search__container .search__finder button:active {
+  background-color: #eee;
+  color: #214f88;
+}
+
+.activity__container .search__container .search__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activity__container .search__container .search__data .search__textbox {
+  background-color: rgba(225, 225, 225, 0.66);
+  min-width: 15rem;
+  border-radius: 10px;
+  color: #214f88;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  min-height: 1.5rem;
+  line-height: 1.5;
+}
+
+.activity__container .activity__add {
+  margin-top: 2rem;
+}
+
+.activity__container .activity__add .add__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.activity__container .activity__add .add__container .select__container {
+  position: relative;
+}
+
+.activity__container .activity__add .add__container .select__container .fa-angle-down {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #214f88;
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+.activity__container .activity__add .add__container .add--label {
+  min-width: 35%;
+  max-width: 35%;
+  max-height: 2rem;
+}
+
+.activity__container .activity__add .add__container .add--date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+}
+
+.activity__container .activity__add .add__container .add--date .add--calendar {
+  position: relative;
+}
+
+.activity__container .activity__add .add__container .add--date .add--calendar * {
+  border-radius: 5px;
+  border: none;
+  color: #214f88;
+}
+
+.activity__container .activity__add .add__container .add--date .add--calendar input {
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.activity__container .activity__add .add__container .add--date .add--calendar .fa-angle-down {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.activity__container .activity__add .add__container .add--date .add--calendar .fa-calendar {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  color: #214f88;
+  z-index: 1;
+}
+
+.activity__container .activity__add .add__container .add--search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.activity__container .activity__add .add__container .add--search .add--select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+  min-width: 15rem;
+  border-radius: 10px;
+  color: #214f88;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  max-height: 1.5rem;
+  line-height: 1.5;
+}
+
+.activity__container .activity__add .add__container .add--location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.activity__container .activity__add .add__container .add--location .add--select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+  min-width: 15rem;
+  border-radius: 10px;
+  color: #214f88;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  max-height: 1.5rem;
+  line-height: 1.5;
+}
+
+.activity__container .activity__add .add__container .add--button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #214f88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.activity__container .activity__add .add__container .add--button i {
+  padding-right: 0.5rem;
+}
+
+.activity__container .activity__add .add__container .add--button h3 {
+  margin-top: 0;
+}
+
+.activity__container .activity__add .add__container .add--button:hover, .activity__container .activity__add .add__container .add--button:active {
+  background-color: #eee;
+  color: #214f88;
+}
+
+.activity__container .activity__add .add__container .button--disabled {
+  background-color: #7d7d7d;
+}
+
+.activity__container .activity__add .add__container .button--disabled:hover, .activity__container .activity__add .add__container .button--disabled:active {
+  background-color: #7d7d7d;
+  color: white;
+}
+
+.activity__container .patient__browsecontacts {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.activity__container .patient__browsecontacts .contacts__table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 4rem;
+}
+
+.activity__container .patient__browsecontacts .contacts__table tbody {
+  min-width: 100%;
+  display: block;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .table__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .table__header th:first-child {
+  min-width: 20%;
+  border-right: 2px solid white;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .table__header th:nth-child(2) {
+  padding-left: 1rem;
+  min-width: 40%;
+  border-right: 2px solid white;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .table__header th:nth-child(3) {
+  padding-left: 1rem;
+  min-width: 35%;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .table__header th:nth-child(4) {
+  min-width: 5%;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 2.5px solid #214f88;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th:first-child {
+  min-width: 20%;
+  max-width: 20%;
+  min-height: 100%;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th:nth-child(2) {
+  min-width: 80%;
+  max-width: 80%;
+  margin-right: 0.5rem;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th:nth-child(3) {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th p, .activity__container .patient__browsecontacts .contacts__table .contact__row th h6 {
+  margin: 0;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th p {
+  font-size: 1rem;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th h6 {
+  font-size: 0.75rem;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th img {
+  border-radius: 25px;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row th i {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row .row__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row .row__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row .row__image .icon {
+  height: 1.75rem;
+  margin-left: auto;
+  width: 100%;
+}
+
+.activity__container .patient__browsecontacts .contacts__table .contact__row .remove__contact {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .activity__container {
+    width: 80%;
+    padding-top: 8rem;
+  }
+  .activity__container .patient__header {
+    font-size: 2rem;
+  }
+  .activity__container .search__header {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .activity__container .search__container > * {
+    margin-top: 2rem;
+  }
+  .activity__container .search__container .search__finder input {
+    min-width: 18rem;
+  }
+  .activity__container .search__container .search__finder .finder--button {
+    width: 8rem;
+  }
+  .activity__container .search__container .search__finder .finder--button i {
+    padding-right: 1.5rem;
+  }
+  .activity__container .search__container .search__data .search__textbox {
+    min-width: 28rem;
+  }
+  .activity__container .activity__add .add__container .add--date .add--calendar .fa-calendar {
+    left: 2rem;
+  }
+  .activity__container .activity__add .add__container .add--date .add--calendar .react-datepicker-wrapper input {
+    min-width: 28rem;
+  }
+  .activity__container .activity__add .add__container .add--search .select__container .add--select {
+    min-width: 28rem;
+  }
+  .activity__container .patient__browsecontacts .browse__container .contacts__table tbody .contact__row th img {
+    width: 4rem;
+  }
+  .activity__container .patient__browsecontacts .browse__container .contacts__table tbody .contact__row th .fa {
+    font-size: 1.75rem;
+  }
+  .activity__container .patient__browsecontacts .browse__container .contacts__table tbody .contact__row .row__image h6 {
+    text-align: center;
+  }
+  .activity__container .patient__browsecontacts .browse__container .contacts__table tbody .contact__row th:nth-child(3) {
+    padding-bottom: 0.3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .activity__container {
+    max-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25vw 25vw 25vw 25vw;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+    -ms-grid-rows: 10vh  10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+        grid-template-rows: 10vh  10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+  }
+  .activity__container .patient__header {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+    max-height: 20vw;
+  }
+  .activity__container .patient__search {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 9;
+    width: 80%;
+    padding-left: 10%;
+  }
+  .activity__container .patient__search .search__container .search__finder input {
+    min-width: 12vw;
+  }
+  .activity__container .patient__search .search__container .search__data .search__textbox {
+    min-width: 22vw;
+  }
+  .activity__container .activity__add {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 4;
+    width: 80%;
+    padding-left: 10%;
+    margin: 0;
+  }
+  .activity__container .activity__add .add__container .add--date .add--calendar .react-datepicker-wrapper input {
+    min-width: 22vw;
+  }
+  .activity__container .activity__add .add__container .add--search .select__container .add--select {
+    min-width: 22vw;
+  }
+  .activity__container .patient__browsecontacts {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 9;
+    width: 80%;
+    padding-left: 10%;
+    margin: 0;
+  }
+}
+
+.bg {
+  background-color: #666;
+  background-image: url(./Components/Login/login-bg.png);
+  background-position: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-size: cover;
+  background-blend-mode: multiply;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  -webkit-transform: translateZ(0);
+  pointer-events: none;
+}
+
+.nav--enabled {
+  color: #06174e;
+}
+
+.nav--enabled object {
+  -webkit-filter: invert(9%) sepia(62%) saturate(3540%) hue-rotate(222deg) brightness(77%) contrast(103%);
+          filter: invert(9%) sepia(62%) saturate(3540%) hue-rotate(222deg) brightness(77%) contrast(103%);
+}
+/*# sourceMappingURL=Main.css.map */
